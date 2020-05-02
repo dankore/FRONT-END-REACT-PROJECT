@@ -10,7 +10,8 @@ import StateContext from "./StateContext";
 import DispatchContext from "./DispatchContext";
 
 // Axios.defaults.baseURL = "https://8080-effeb3fc-31e7-49fd-9f78-b7b149eb2e3a.ws-us02.gitpod.io";
-Axios.defaults.baseURL = process.env.BACKENDURL || ""
+Axios.defaults.baseURL =
+  process.env.BACKENDURL || "https://back-end-react-social-network.herokuapp.com";
 
 // COMPONENTS
 import LoadingDotsIcon from "./components/LoadingDotsIcon";
