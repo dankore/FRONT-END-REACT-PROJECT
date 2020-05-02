@@ -27,7 +27,7 @@ function Chat() {
 
   useEffect(() => {
     socket.current = io(
-      process.env.BACKENDURL || "https://back-end-react-social-network.herokuapp.com/"
+      process.env.BACKENDURL || "https://back-end-react-social-network.herokuapp.com"
     );
 
     socket.current.on("chatFromServer", (message) => {
